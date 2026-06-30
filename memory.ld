@@ -1,3 +1,4 @@
+ENTRY(reset_handler)
 /* Define memory regions */
 
 MEMORY

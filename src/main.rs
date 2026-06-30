@@ -3,13 +3,14 @@
 #![allow(clippy::empty_loop)]
 use core::panic:: PanicInfo;
 
-
+mod startup_stm32f303;
 //global array 
 static mut SCORES_GLOBAL  : [i32; 5 ] = [1 , 2, 3, 4, 5];
 const NUMBERS  : [i32 ; 5 ] = [1 , 2,3 ,4,5];
 static mut BUFFER : [u8 ; 1024] = [0 ;  1024];
 
 #[unsafe(no_mangle)]
+
 fn main(){
 let mut total_score = 0 ;
 
