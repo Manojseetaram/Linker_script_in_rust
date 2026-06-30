@@ -18,8 +18,10 @@ unsafe  {
 for score in SCORES_GLOBAL {
     total_score += score;
 }
- 
-}
+ }
+ unsafe {
+    BUFFER[0] = 100;
+ }
    loop {
 
     }
